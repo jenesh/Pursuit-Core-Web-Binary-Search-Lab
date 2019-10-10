@@ -49,7 +49,7 @@ let mtx = [
 const matrix = (mtx, target) => {
     let left = 0;
     let right = mtx.length - 1;
-    let midMatrix = Math.floor((right - left) / 2);
+    let midMatrix = Math.floor((right + left) / 2);
 
     let middleArray = mtx[midMatrix];
 
