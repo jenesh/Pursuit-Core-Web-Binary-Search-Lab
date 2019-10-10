@@ -5,10 +5,6 @@ const binarySearch = (arr, target) => {
     let right = arr.length - 1;
     let middle = Math.floor((right - left) / 2);
 
-    if (arr[middle] === target) {
-        return 0;
-    }
-
     while (left <= right) {
         if (arr[middle] === target) {
             return middle;
@@ -22,7 +18,7 @@ const binarySearch = (arr, target) => {
     return -1;
 }
 
-// console.log(binarySearch(arr1, 6)) // => 1
+console.log(binarySearch(arr1, 2)) // => 1
 
 let arr2 = [1, 2, 3, 4, 5, 6, 7, 66];
 
@@ -42,7 +38,7 @@ const binarySearchRecursive = (arr, target, left = 0, right = arr.length - 1) =>
     }
 }
 
-console.log(binarySearchRecursive(arr2, 0)) // => 1
+// console.log(binarySearchRecursive(arr2, 0)) // => 1
 
 let mtx = [
     [1, 2, 3],
